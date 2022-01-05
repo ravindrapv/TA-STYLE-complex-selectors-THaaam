@@ -81,9 +81,10 @@ nav a{
 }
 
 .container{
-    width: 90%;
+    max-width: 1300px;
+    width: 100%;
     margin: 0 auto;
-    /* border: 1px solid black; */
+    padding: 0 auto;
 }
 
 .hero-heading {
@@ -209,9 +210,7 @@ center{
 .flex-30{
     flex: 0 1 30%;
 }
-.flex-40{
-    flex: 0 1 40%;
-}
+
 .flex-45{
     flex: 0 1 45%;
 }
@@ -322,4 +321,58 @@ footer li{
     text-decoration: none;
     color: gray;
     margin-top: 1rem;
+}
+
+
+@media all and (max-width:768px){
+    html{
+        font-size: 14px;
+    }
+    .flex{
+        flex-wrap: wrap;
+    }
+    .container{
+        width: 100%;
+    }
+    .SC-flex-100{
+        flex: 0 1 100%;
+    }
+}
+@media all and (max-width:600px){
+    html{
+        font-size: 14px;
+    }
+    .flex{
+        flex-wrap: wrap;
+    }
+    .container{
+        width: 100%;
+    }
+    .SC-flex-100{
+        flex: 0 1 100%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .flex-40{
+        flex: 0 1 40%;
+    }
+}
+@media all and (max-width:360px){
+    html{
+        font-size: 14px;
+    }
+    .flex{
+        flex-wrap: wrap;
+    }
+    .container{
+        width: 100%;
+    }
+    .SC-flex-100{
+        flex: 0 1 100%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .flex-40{
+        flex: 0 1 40%;
+    }
 }
